@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import BurgerBtn from "../inputs/burger-btn";
 import Drawer from "../data display/drawer";
 import List from "../data display/list";
@@ -11,16 +11,24 @@ import { motion } from "framer-motion";
 import { IoPersonOutline } from "react-icons/io5";
 import { IoIosClose } from "react-icons/io";
 import clsx from "clsx";
+import { useScreenDimension } from "../hooks/use-screen-dimension";
 
 export default function AppMenu() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen((prev) => !prev);
 
+  const { width } = useScreenDimension();
+  useEffect(() => {
+    if (width >= 768) {
+      setIsOpen(false);
+    }
+  }, [width]);
+
   return (
     <>
       <BurgerBtn
         onClick={toggleMenu}
-        className={clsx("relative z-10 transition delay-200", {
+        className={clsx("relative z-10 transition delay-200 md:hidden", {
           "rotate-90 bg-gray-50": isOpen,
         })}
       />
