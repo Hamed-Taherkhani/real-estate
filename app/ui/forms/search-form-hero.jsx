@@ -17,24 +17,12 @@ export default function SearchFormHero() {
           <span className="block h-1 w-0 bg-gray-50 rounded-full transition-[width] duration-300 peer-checked:w-full" />
         </label>
         <label className="relative cursor-pointer">
-          <input
-            type="radio"
-            name="cat"
-            defaultChecked
-            hidden
-            className="peer"
-          />
+          <input type="radio" name="cat" hidden className="peer" />
           <span className="text-xl px-4 py-2 block">Rent</span>
           <span className="block h-1 w-0 bg-gray-50 rounded-full transition-[width] duration-300 peer-checked:w-full" />
         </label>
         <label className="relative cursor-pointer">
-          <input
-            type="radio"
-            name="cat"
-            defaultChecked
-            hidden
-            className="peer"
-          />
+          <input type="radio" name="cat" hidden className="peer" />
           <span className="text-xl px-4 py-2 block">Mortgage</span>
           <span className="block h-1 w-0 bg-gray-50 rounded-full transition-[width] duration-300 peer-checked:w-full" />
         </label>
