@@ -1,3 +1,7 @@
+import { PiTelegramLogo } from "react-icons/pi";
+import { FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+
 export const navLinks = [
   {
     title: "Home",
@@ -65,5 +69,61 @@ export const homesList = [
     lat: "",
     lon: "",
     pictures: ["/images/p3.jpg"],
+  },
+];
+
+export const footerLinks = [
+  {
+    title: "Fast access",
+    links: navLinks,
+  },
+  {
+    title: "Markets",
+    links: [
+      {
+        title: "Tehran",
+        href: "/",
+      },
+      {
+        title: "London",
+        href: "/",
+      },
+      {
+        title: "Los angles",
+        href: "/",
+      },
+      {
+        title: "Houston",
+        href: "/",
+      },
+    ],
+  },
+  {
+    title: "Contacts",
+    links: [
+      {
+        title: "09120000000",
+        href: "tel:09120000000",
+      },
+      {
+        title: "hamedtahi7@gmail.com",
+        href: "mailto:hamedtahi7@gmail.com",
+      },
+    ],
+  },
+];
+
+export const socialMedia = [
+  {
+    title: <PiTelegramLogo />,
+    href: "/",
+  },
+  {
+    title: <FaInstagram />,
+    href: "/",
+  },
+  {
+    title: <FaXTwitter />,
+    href: "/",
   },
 ];

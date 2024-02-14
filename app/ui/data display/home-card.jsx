@@ -32,22 +32,22 @@ export default function HomeCard({
           className="w-full h-full object-cover rounded-t-xl"
         />
       </div>
-      <main className="p-4 text-gray-500">
+      <main className="p-4 text-gray-600">
         <p className="text-2xl font-medium text-gray-900">
           {formatMoney(price)}
         </p>
         <div className="flex gap-8 text-lg mb-1">
           <div className="flex items-center gap-1">
             <IoBedOutline aria-label="Bedroom" />
-            <span className="font-medium text-gray-800">{bed}</span>
+            <span>{bed}</span>
           </div>
           <div className="flex items-center gap-1">
             <PiBathtub aria-label="Bathroom" />
-            <span className="font-medium text-gray-800">{bath}</span>
+            <span>{bath}</span>
           </div>
           <div className="flex items-center gap-1">
             <PiRuler aria-label="Ruler" />
-            <span className="font-medium text-gray-800">{sqr}</span>
+            <span>{sqr}</span>
           </div>
         </div>
         <h4>
