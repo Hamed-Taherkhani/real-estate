@@ -106,7 +106,7 @@ export default function AppMenu() {
             }}
           >
             <Link
-              href={"/user/account/login"}
+              href={"/user/account/auth/login"}
               className="bg-black text-gray-50 flex items-center gap-3 mx-4 rounded-full p-4 px-5 text-xl"
             >
               <IoPersonOutline className="text-2xl" />
