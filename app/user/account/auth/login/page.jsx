@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function LoginPage() {
   return (
     <div className="grid md:grid-cols-2 lg:grid-cols-8">
-      <div className="h-screen min-h-screen flex justify-center items-center bg-white lg:col-span-3">
+      <div className="min-h-screen flex justify-center items-center bg-white lg:col-span-3">
         <div className="w-full max-w-md p-4">
           <div>
             <h1 className="text-gray-800 text-2xl md:text-[1.7rem] font-bold">
