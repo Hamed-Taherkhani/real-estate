@@ -10,6 +10,7 @@ export default function Hero() {
           width={720}
           height={480}
           className="w-full h-full object-cover"
+          alt=""
         />
 
         <div className="absolute top-0 right-0 bottom-0 left-0 flex flex-col justify-center items-center text-gray-50 bg-black/50">

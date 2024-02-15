@@ -21,7 +21,7 @@ export default function LoginPage() {
           <div>
             <LoginForm className="w-full mb-1" />
             <Link href="./signup" className="inline-block text-sm md:text-base">
-              I don't have account!
+              {"I don't have account!"}
               <span className="font-bold ml-1 text-blue-600">Sign up</span>
             </Link>
           </div>
@@ -32,6 +32,7 @@ export default function LoginPage() {
         src="/images/hero.jpg"
         width={720}
         height={480}
+        alt=""
         className="hidden md:block lg:col-span-5 w-full h-full object-cover"
       />
     </div>

@@ -32,6 +32,7 @@ export default function SignupPage() {
         src="/images/hero.jpg"
         width={720}
         height={480}
+        alt=""
         className="hidden md:block lg:col-span-5 w-full h-full object-cover"
       />
     </div>
