@@ -15,7 +15,7 @@ export default function FilterSearchResults() {
   const { width } = useScreenDimension();
   useEffect(() => {
     if (width >= 768) setOpen(false);
-  }, width);
+  }, [width]);
 
   return (
     <>
