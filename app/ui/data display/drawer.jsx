@@ -3,7 +3,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 
-const bgVariants = {
+export const bgVariants = {
   open: {
     opacity: 100,
     transition: {
@@ -20,7 +20,7 @@ const bgVariants = {
   },
 };
 
-export default function Drawer({ children, open, className }) {
+export default function Drawer({ children, open, className, disableBg }) {
   return (
     <AnimatePresence>
       {open && (
@@ -31,10 +31,12 @@ export default function Drawer({ children, open, className }) {
           className={twMerge("fixed top-0 right-0 bottom-0 left-0", className)}
         >
           {/* Background */}
-          <motion.span
-            variants={bgVariants}
-            className="block absolute top-0 right-0 bottom-0 left-0 bg-dark-blue"
-          />
+          {!disableBg && (
+            <motion.span
+              variants={bgVariants}
+              className="block absolute top-0 right-0 bottom-0 left-0 bg-dark-blue"
+            />
+          )}
           <div className="relative z-10 h-full">{children}</div>
         </motion.div>
       )}
